@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35C8355B2B6D0572000C776A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8355A2B6D0572000C776A /* AppDelegate.swift */; };
+		35C8355D2B6D0572000C776A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8355C2B6D0572000C776A /* SceneDelegate.swift */; };
+		35C835642B6D0574000C776A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C835632B6D0574000C776A /* Assets.xcassets */; };
+		35C835672B6D0574000C776A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C835652B6D0574000C776A /* LaunchScreen.storyboard */; };
+		35C835702B6D07FA000C776A /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8356F2B6D07FA000C776A /* PosterViewController.swift */; };
+		35C835742B6D080F000C776A /* PosterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835732B6D080F000C776A /* PosterModel.swift */; };
+		35C835762B6D081C000C776A /* PosterCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835752B6D081C000C776A /* PosterCustomCell.swift */; };
+		35C835782B6D0934000C776A /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835772B6D0934000C776A /* TicketViewController.swift */; };
+		35C8357A2B6D093A000C776A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835792B6D0939000C776A /* ProfileViewController.swift */; };
+		35C8357F2B6D199A000C776A /* AboutCinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8357E2B6D199A000C776A /* AboutCinemaViewController.swift */; };
+		35C835852B6DE363000C776A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835842B6DE363000C776A /* ApiClient.swift */; };
+		35C835872B6DF4FF000C776A /* PosterViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835862B6DF4FF000C776A /* PosterViewController+CollectionView.swift */; };
+		35C835892B6E0166000C776A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C835882B6E0166000C776A /* ImageLoader.swift */; };
+		35C8358B2B6E8EA5000C776A /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8358A2B6E8EA5000C776A /* ScheduleViewController.swift */; };
+		35C8358E2B6E91A2000C776A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8358D2B6E91A2000C776A /* PaymentViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35C835572B6D0572000C776A /* cinema-shift-2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cinema-shift-2024.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C8355A2B6D0572000C776A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35C8355C2B6D0572000C776A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		35C835632B6D0574000C776A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35C835662B6D0574000C776A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35C835682B6D0574000C776A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C8356F2B6D07FA000C776A /* PosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewController.swift; sourceTree = "<group>"; };
+		35C835732B6D080F000C776A /* PosterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterModel.swift; sourceTree = "<group>"; };
+		35C835752B6D081C000C776A /* PosterCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCustomCell.swift; sourceTree = "<group>"; };
+		35C835772B6D0934000C776A /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		35C835792B6D0939000C776A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		35C8357E2B6D199A000C776A /* AboutCinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCinemaViewController.swift; sourceTree = "<group>"; };
+		35C835842B6DE363000C776A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		35C835862B6DF4FF000C776A /* PosterViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		35C835882B6E0166000C776A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		35C8358A2B6E8EA5000C776A /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		35C8358D2B6E91A2000C776A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35C835542B6D0572000C776A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35C8354E2B6D0572000C776A = {
+			isa = PBXGroup;
+			children = (
+				35C835592B6D0572000C776A /* cinema-shift-2024 */,
+				35C835582B6D0572000C776A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35C835582B6D0572000C776A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C835572B6D0572000C776A /* cinema-shift-2024.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C835592B6D0572000C776A /* cinema-shift-2024 */ = {
+			isa = PBXGroup;
+			children = (
+				35C8356E2B6D07D2000C776A /* Poster */,
+				35C8357D2B6D1985000C776A /* AboutCinema */,
+				35C8357B2B6D0C15000C776A /* Ticket */,
+				35C8357C2B6D0C20000C776A /* Profile */,
+				35C8358C2B6E9187000C776A /* Schedule */,
+				35C8358F2B6E91A9000C776A /* Payment */,
+				35C835842B6DE363000C776A /* ApiClient.swift */,
+				35C835882B6E0166000C776A /* ImageLoader.swift */,
+				35C8355A2B6D0572000C776A /* AppDelegate.swift */,
+				35C8355C2B6D0572000C776A /* SceneDelegate.swift */,
+				35C835632B6D0574000C776A /* Assets.xcassets */,
+				35C835652B6D0574000C776A /* LaunchScreen.storyboard */,
+				35C835682B6D0574000C776A /* Info.plist */,
+			);
+			path = "cinema-shift-2024";
+			sourceTree = "<group>";
+		};
+		35C8356E2B6D07D2000C776A /* Poster */ = {
+			isa = PBXGroup;
+			children = (
+				35C835732B6D080F000C776A /* PosterModel.swift */,
+				35C8356F2B6D07FA000C776A /* PosterViewController.swift */,
+				35C835862B6DF4FF000C776A /* PosterViewController+CollectionView.swift */,
+				35C835752B6D081C000C776A /* PosterCustomCell.swift */,
+			);
+			path = Poster;
+			sourceTree = "<group>";
+		};
+		35C8357B2B6D0C15000C776A /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				35C835772B6D0934000C776A /* TicketViewController.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		35C8357C2B6D0C20000C776A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35C835792B6D0939000C776A /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35C8357D2B6D1985000C776A /* AboutCinema */ = {
+			isa = PBXGroup;
+			children = (
+				35C8357E2B6D199A000C776A /* AboutCinemaViewController.swift */,
+			);
+			path = AboutCinema;
+			sourceTree = "<group>";
+		};
+		35C8358C2B6E9187000C776A /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				35C8358A2B6E8EA5000C776A /* ScheduleViewController.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		35C8358F2B6E91A9000C776A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				35C8358D2B6E91A2000C776A /* PaymentViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35C835562B6D0572000C776A /* cinema-shift-2024 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C8356B2B6D0574000C776A /* Build configuration list for PBXNativeTarget "cinema-shift-2024" */;
+			buildPhases = (
+				35C835532B6D0572000C776A /* Sources */,
+				35C835542B6D0572000C776A /* Frameworks */,
+				35C835552B6D0572000C776A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cinema-shift-2024";
+			productName = "cinema-shift-2024";
+			productReference = 35C835572B6D0572000C776A /* cinema-shift-2024.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35C8354F2B6D0572000C776A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					35C835562B6D0572000C776A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 35C835522B6D0572000C776A /* Build configuration list for PBXProject "cinema-shift-2024" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35C8354E2B6D0572000C776A;
+			productRefGroup = 35C835582B6D0572000C776A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35C835562B6D0572000C776A /* cinema-shift-2024 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35C835552B6D0572000C776A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C835672B6D0574000C776A /* LaunchScreen.storyboard in Resources */,
+				35C835642B6D0574000C776A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C835532B6D0572000C776A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C835892B6E0166000C776A /* ImageLoader.swift in Sources */,
+				35C8358E2B6E91A2000C776A /* PaymentViewController.swift in Sources */,
+				35C835742B6D080F000C776A /* PosterModel.swift in Sources */,
+				35C835702B6D07FA000C776A /* PosterViewController.swift in Sources */,
+				35C8358B2B6E8EA5000C776A /* ScheduleViewController.swift in Sources */,
+				35C8355B2B6D0572000C776A /* AppDelegate.swift in Sources */,
+				35C835782B6D0934000C776A /* TicketViewController.swift in Sources */,
+				35C835872B6DF4FF000C776A /* PosterViewController+CollectionView.swift in Sources */,
+				35C8355D2B6D0572000C776A /* SceneDelegate.swift in Sources */,
+				35C8357F2B6D199A000C776A /* AboutCinemaViewController.swift in Sources */,
+				35C8357A2B6D093A000C776A /* ProfileViewController.swift in Sources */,
+				35C835762B6D081C000C776A /* PosterCustomCell.swift in Sources */,
+				35C835852B6DE363000C776A /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35C835652B6D0574000C776A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C835662B6D0574000C776A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35C835692B6D0574000C776A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35C8356A2B6D0574000C776A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35C8356C2B6D0574000C776A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D5DULLXY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cinema-shift-2024/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Serega-A.I..cinema-shift-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35C8356D2B6D0574000C776A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D5DULLXY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "cinema-shift-2024/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Serega-A.I..cinema-shift-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35C835522B6D0572000C776A /* Build configuration list for PBXProject "cinema-shift-2024" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C835692B6D0574000C776A /* Debug */,
+				35C8356A2B6D0574000C776A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C8356B2B6D0574000C776A /* Build configuration list for PBXNativeTarget "cinema-shift-2024" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C8356C2B6D0574000C776A /* Debug */,
+				35C8356D2B6D0574000C776A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35C8354F2B6D0572000C776A /* Project object */;
+}
